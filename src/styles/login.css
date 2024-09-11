@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+.section-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 450px;
+    width: 800px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.image-tiger{
+    width: 150px;
+    height: 150px;
+}
+.description-site{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: var( --font-size-4);
+    background-color:rgb(190, 162, 120) ;
+    padding: 16px;
+}
+
+.div-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-image: url(./../image/fundotiger.png);
+    background-size: 500px 500px;
+    background-position: center;
+    gap: 30px;
+    
+}
+input{
+    padding: 5px;
+    height: 47px;
+    width: 240px;
+    border-radius: 7px;
+    transition: .2s;
+}
+input:hover{
+    background-color: rgb(211, 211, 211);
+}
+.button-password{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-right: 86px;
+    cursor: pointer;
+    transition: .2s;
+}
+.button-password:hover{
+    background-color: white;
+    color: var(--color-black-2);
+}
+.button-enter{
+    width: 9rem;
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.button-enter:hover{
+    background-color: white;
+    color: var(--color-black-2)
+}
+.title-login{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.74);
+    padding: 7px;
+    border-radius: 5px;
+}

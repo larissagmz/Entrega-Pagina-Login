@@ -1,0 +1,98 @@
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+#modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    background-color:rgba(210, 210, 210, 0.89);
+    width: 480px;
+    height: 450px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+.modal-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+.button-exit{
+    align-self:  flex-end;
+   margin-top: 0.5rem;
+   margin-right: 0.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: black;
+    color: rgba(167, 121, 68, 1) ;
+    font-size: 24px;
+    border: none;
+    font-weight: bold;
+    transition: .2s;
+}
+.button-exit:hover{
+    background-color:rgba(167, 121, 68, 1) ;
+    color: black;
+}
+.title-recover-password{
+    color: rgba(167, 121, 68, 1) ;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.modal-header h2{
+    font-size: 23px;
+    width: 419px;
+  font-weight: bold;
+}
+
+#recover-passwor{
+    width: 390px;
+    height: 53px;
+    border: none;
+    padding-left: 15px;
+}
+
+.button-code{
+    width: 390px;
+    height: 53px;
+    border: none;
+    background-color: rgba(167, 121, 68, 1);
+    font-weight: bold;
+    font-size: 32px;
+    border-radius: 5px;
+    transition: .2s;
+    cursor: pointer;
+}
+.button-code:hover{
+    background-color: black;
+    color:  rgba(167, 121, 68, 1);
+}
+#fade, #modal{
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+#modal.hide,
+#fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+#modal.hide{
+    top: 0;
+}

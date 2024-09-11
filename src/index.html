@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/login.css" />
+        <link rel="stylesheet" href="./styles/modal.css" />
+        <link rel="stylesheet" href="./styles/index.css" />
+        <title>Pagina de login</title>
+    </head>
+    <body>
+        <main class="container">
+            <section class="section-login">
+                <div class="description-site">
+                    <h1>Fortune tiger</h1>
+                    <p>
+                        Fortune Tiger é um jogo de apostas e cassino online
+                        caracterizado como jogo de azar, a diferenca e que aqui
+                        seu dinheiro nao sera perdido, e sim multiplicado
+                    </p>
+                    <figure class="image-tiger">
+                        <img
+                            src="./image/tigrinho-removebg-preview.png"
+                            alt="tigrinho"
+                        />
+                    </figure>
+                </div>
+                <div class="div-login">
+                    <h1 class="title-login">Login</h1>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    />
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Digite sua senha"
+                        required
+                    />
+                    <button class="button-password">Esqueceu sua senha?</button>
+                    <button class="button-enter">Entrar</button>
+                </div>
+            </section>
+            <div id="fade" class="hide"></div>
+            <div id="modal" class="hide">
+                <div class="modal-header">
+                    <button class="button-exit">X</button>
+                    <h1 class="title-recover-password">Esqueceu sua senha?</h1>
+                    <h2>Digite o e-mail para recuperacao de senha</h2>
+                    <input
+                        type="email"
+                        id="recover-passwor"
+                        placeholder="Digite seu e-mail..."
+                    />
+                    <button class="button-code">Enviar codigo</button>
+                </div>
+            </div>
+        </main>
+        <script src="./script/index.js"></script>
+    </body>
+</html>
